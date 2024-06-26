@@ -73,5 +73,5 @@ body {
   color: #3e8e41;
 border: 10px solid;
 padding: 10px;
-border: color(srgb red green blue);
+background-color: black;
   }
