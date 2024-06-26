@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho - Educação e Desenvolvimento Rural</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agrinho - O Pequeno Gigante</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>  
+    <header>
         <nav>
             <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#program">Programa</a></li>
-                <li><a href="#resources">Recursos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h1>Agrinho - Educação e Desenvolvimento Rural</h1>
-            <p>O Agrinho é um programa que visa promover a educação e o desenvolvimento social em comunidades rurais. Nossa missão é educar e capacitar indivíduos para se tornarem cidadãos responsáveis, capazes de contribuir para uma sociedade mais justa e equitativa.</p>
+        <section id="sobre">
+            <h1>Agrinho - O Pequeno Gigante</h1>
+            <p>O Agrinho é uma variedade de feijão que é muito popular no Brasil. Ele é conhecido por sua pequena tamanho e seu sabor delicioso.</p>
+            <img src="agrinho.jpg" alt="Agrinho" width="200px">
         </section>
-        <section id="program">
-            <h2>Objetivos do Programa</h2>
+        <section id="caracteristicas">
+            <h2>Características</h2>
             <ul>
-                <li>Educar e capacitar indivíduos para se tornarem cidadãos responsáveis</li>
-                <li>Promover a saúde, segurança e conscientização ambiental</li>
-                <li>Integrar temas sociais e ambientais nos currículos escolares</li>
-                <li>Encorajar o pensamento crítico, criatividade e autonomia entre alunos e professores</li>
-            </ul>
-            <h2>Como funciona</h2>
-            <p>O Agrinho oferece uma variedade de atividades e recursos para alunos e professores, incluindo materiais educacionais e workshops, desenvolvimento de projetos, engajamento comunitário e treinamento de professores.</p>
-        </section>
-        <section id="resources">
-            <h2>Recursos</h2>
-            <ul>
-                <li><a href="https://www.sistemafaep.org.br/agrinho/">Site do Programa Agrinho</a></li>
-                <li><a href="https://blog.cria.net.br/wp-content/uploads/2024/06/redacao-agrinho-2024-02-1024x683.webp">Materiais da Redação Agrinho 2024</a></li>
+                <li>Pequeno tamanho</li>
+                <li>Sabor delicioso</li>
+                <li>Alto teor de proteínas</li>
+                <li>Baixo teor de gordura</li>
+                <li>Rico em fibras</li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="receitas">
+            <h2>Receitas</h2>
+            <p>O Agrinho é muito versátil e pode ser usado em diversas receitas. Aqui estão algumas sugestões:</p>
+            <ul>
+                <li><a href="receita-feijoada.html">Feijoada</a></li>
+                <li><a href="receita-salada.html">Salada de feijão</a></li>
+                <li><a href="receita-sopa.html">Sopa de feijão</a></li>
+            </ul>
+        </section>
+        <section id="contato">
             <h2>Contato</h2>
-            <p>Para mais informações ou para se inscrever no programa, por favor entre em contato conosco:</p>
-            <ul>
-                <li>Email: [agrinho@email.com](mailto:agrinho@email.com)</li>
-                <li>Telefone: (11) 1234-5678</li>
-            </ul>
+            <p>Entre em contato conosco para saber mais sobre o Agrinho ou para fazer uma compra.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Agrinho. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Agrinho - O Pequeno Gigante</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
