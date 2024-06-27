@@ -42,11 +42,12 @@ section {
 
 button {
   background-color: #03eb0b;
-  color: #fff;
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
 }
 
 
