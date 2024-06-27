@@ -41,17 +41,12 @@ section {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #03eb0b;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.button {
-  background-color: chartreuse;
-font: 20px;
 }
 
 
