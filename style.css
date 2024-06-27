@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
- background-color:  #228b22;
+ background-color:  #4169e1;
  color: #228b22;
 }
 
@@ -35,7 +35,7 @@ section {
 
 #farm-list li {
   padding: 10px;
-  border-bottom: 1px solid #a01818;
+  border-bottom: 1px solid #ccc;
 }
 
 #farm-list li:last-child {
