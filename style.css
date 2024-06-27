@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
- background-color:  #2f4538;
+ background-color:  #228b22;
  color: #228b22;
 }
 
@@ -21,7 +21,7 @@ main {
 }
 
 section {
-  background-color: #a82525;
+  background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
