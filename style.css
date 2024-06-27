@@ -7,13 +7,13 @@ body {
 }
 
 header {
- background-color:  #ffc0cb;
+ background-color: #2f4538;
   padding: 20px;
   text-align: center;
 }
 
 main {
-  background-color:  #ffc0cb;
+  background-color: #2f4538;
   display: flex;
   flex-direction: column;
   align-items: center;
