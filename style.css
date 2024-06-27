@@ -49,9 +49,11 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
+  .button{
     background-color: chartreuse;
   }
+    
+
   #sobre-agrinho {
     display: flex;
     flex-direction: column;
