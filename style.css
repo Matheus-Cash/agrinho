@@ -50,7 +50,7 @@ body {
   }
   
   button:hover {
-    background-color: #22cc6e;
+    background-color: chartreuse;
   }
   #sobre-agrinho {
     display: flex;
