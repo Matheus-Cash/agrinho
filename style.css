@@ -130,3 +130,15 @@
       margin-right: 0;
     }
   }
+  section, button {
+    background-color: #F7D2C4; /* um amarelo-creme claro e alegre */
+    color: #333; /* cor do texto: preto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  section:hover, button:hover {
+    background-color: #F2C464; /* um amarelo-creme mais escuro ao passar o mouse */
+  }
