@@ -34,12 +34,12 @@
   }
   
   a {
+    color: #F7E4CE; /* um vinho claro e alegre */
     text-decoration: none;
-    color: #337ab7;
   }
   
   a:hover {
-    color: #23527c;
+    color: #F2C464; /* um vinho claro mais escuro ao passar o mouse */
   }
   
   /* Header Styles */
