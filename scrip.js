@@ -1,12 +1,12 @@
 // script.js
 
-// Função para adicionar evento de clique aos links da navegação
+// Função para adicionar evento de clique aos títulos da navegação
 document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll("nav a");
-  navLinks.forEach(function(link) {
-    link.addEventListener("click", function(event) {
+  const navTitles = document.querySelectorAll("nav h2");
+  navTitles.forEach(function(title) {
+    title.addEventListener("click", function(event) {
       event.preventDefault();
-      const targetSection = document.querySelector(`#${link.getAttribute("href").substring(1)}`);
+      const targetSection = document.querySelector(`#${title.textContent.toLowerCase().replace(" ", "-")}`);
       targetSection.scrollIntoView({ behavior: "smooth" });
     });
   });
