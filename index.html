@@ -1,56 +1,84 @@
 <!-- index.html -->
 
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uva de Rosário do Ivai</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="scrip.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uva de Rosário do Ivaí - Vinhos e Suco de Qualidade</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Uva de Rosário do Ivai</h1>
-  </header>
-  <nav>
-  
-    <h2>Nossa História</h2>
-    
-  </nav>
-  <main>
-    <section id="quem-somos">
-      <h2>Quem Somos</h2>
-      <p>A Uva de Rosário do Ivai é uma empresa familiar que produz uvas de alta qualidade Rosário do Ivaí é conhecido como a "Capital da Uva Niágara"! A região é famosa pela produção de uvas de alta qualidade, especialmente a variedade Niágara.
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Uva de Rosário do Ivaí</h1>
+    </header>
 
-        A técnica de dupla poda ou inversão de ciclo vem permitindo a obtenção de vinhos finos de qualidade e competitivos no mercado, chamados vinhos de inverno. Além disso, a região de São Roque, próxima a Rosário do Ivaí, também tem conseguido sucesso e se destaca na produção de vinhos de qualidade com o uso da técnica.
-        
-        As extensas plantações de uva em Rosário do Ivaí são localizadas próximas às rodovias, facilitando o transporte e a comercialização da produção. A região oferece condições climáticas ideais para o cultivo de uvas, com temperaturas amenas e solo fértil.
-        
-        A uva Niágara é uma variedade de uva branca, originária dos EUA, e é muito apreciada por sua doçura e sabor agradável. É utilizada para a produção de vinhos, sucos e outras bebidas.
-        
-        Rosário do Ivaí é um importante polo de produção de uva no Brasil, e sua produção é muito valorizada no mercado. A região também é conhecida por suas belas paisagens, com plantações de uva e outros cultivos, tornando-a um destino turístico atraente.</p>
-      
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Rosário do Ivaí é conhecido como a "Capital da Uva Niágara" e nossa fazenda é uma das principais produtoras de uva de alta qualidade na região.</p>
+        <p>Nossa história começou há mais de 30 anos, quando nossos avós começaram a cultivar uvas em nossas terras. Desde então, nossa família tem se dedicado a produzir uvas de alta qualidade, respeitando o meio ambiente e valorizando a tradição.</p>
+        <img src="images/fazenda.jpg" alt="Fazenda de Uva">
     </section>
-    <section id="nossa-historia">
-      <h2>Nossa História</h2>
-      <p>A nossa história começou em 1990, quando...</p>
-      
-    </section>
+
+    <!-- Seção Produtos -->
     <section id="produtos">
-      <h2>Produtos</h2>
-      <p>Nossos produtos são feitos com amor e carinho.</p>
-     
+        <h2>Nossos Produtos</h2>
+        <ul>
+            <li>
+                <img src="images/vinho.jpg" alt="Vinho Niágara">
+                <h3>Vinho Niágara</h3>
+                <p>Nosso vinho Niágara é produzido com uvas selecionadas e é conhecido por sua doçura e sabor agradável.</p>
+            </li>
+            <li>
+                <img src="images/suco.jpg" alt="Suco de Uva">
+                <h3>Suco de Uva</h3>
+                <p>Nosso suco de uva é produzido com uvas frescas e é rico em vitaminas e minerais.</p>
+            </li>
+            <li>
+                <img src="images/uvaseca.jpg" alt="Uva Seca">
+                <h3>Uva Seca</h3>
+                <p>Nossa uva seca é produzida com uvas selecionadas e é perfeita para consumo como snack saudável.</p>
+            </li>
+        </ul>
     </section>
+
+    <!-- Seção Contato -->
     <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco para saber mais.</p>
-      
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber mais sobre nossos produtos e serviços.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <address>
+            Rua Principal, 123<br>
+            Rosário do Ivaí, PR<br>
+            (43) 99999-9999<br>
+            <a href="mailto:contato@uvaderosario.com.br">contato@uvaderosario.com.br</a>
+        </address>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Uva de Rosário do Ivai</p>
-  </footer>
-  <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Uva de Rosário do Ivaí</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
