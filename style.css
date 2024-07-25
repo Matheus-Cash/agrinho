@@ -15,7 +15,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: inline;
   justify-content: space-between;
 }
 
