@@ -1,83 +1,40 @@
-// Função para mostrar e esconder os menus
-function toggleMenu(menuId) {
-  const menu = document.getElementById(menuId);
-  menu.classList.toggle('show');
-}
+// Seleciona os elementos do formulário de contato
+const form = document.querySelector('form');
+const nomeInput = document.querySelector('#nome');
+const emailInput = document.querySelector('#email');
+const mensagemInput = document.querySelector('#mensagem');
 
-// Adiciona evento de clique nos links do menu
-document.querySelectorAll('nav a').forEach((link) => {
-  link.addEventListener('click', (e) => {
-      e.preventDefault();
-      toggleMenu(link.getAttribute('href').replace('#', ''));
+// Adiciona um evento de submit ao formulário
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // Previne o comportamento padrão do formulário
+
+  // Verifica se os campos estão preenchidos
+  if (nomeInput.value && emailInput.value && mensagemInput.value) {
+    // Envia uma mensagem de sucesso
+    alert('Mensagem enviada com sucesso!');
+  } else {
+    // Envia uma mensagem de erro
+    alert('Por favor, preencha todos os campos!');
+  }
+});
+
+// Adiciona um evento de hover aos links do menu
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach((link) => {
+  link.addEventListener('mouseover', () => {
+    link.style.color = '#4CAF50'; // Muda a cor do link para verde
+  });
+
+  link.addEventListener('mouseout', () => {
+    link.style.color = ''; // Volta à cor original do link
   });
 });
 
-// Função para enviar formulário de contato
-function sendContactForm() {
-  const form = document.getElementById('contact-form');
-  const nome = document.getElementById('nome').value;
-  const email = document.getElementById('email').value;
-  const mensagem = document.getElementById('mensagem').value;
-
-  // Verifica se os campos estão preenchidos
-  if (nome && email && mensagem) {
-      // Envia formulário via AJAX
-      fetch('/contact', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-              nome,
-              email,
-              mensagem
-          })
-      })
-      .then((response) => response.json())
-      .then((data) => {
-          if (data.success) {
-              alert('Mensagem enviada com sucesso!');
-              form.reset();
-          } else {
-              alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
-          }
-      })
-      .catch((error) => {
-          console.error(error);
-          alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
-      });
-  } else {
-      alert('Preencha todos os campos obrigatórios!');
+// Adiciona um evento de scroll à página
+window.addEventListener('scroll', () => {
+  // Verifica se o usuário scrolled até o final da página
+  if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+    // Mostra uma mensagem de "Você alcançou o final da página!"
+    alert('Você alcançou o final da página!');
   }
-}
-
-// Adiciona evento de submit ao formulário de contato
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  sendContactForm();
 });
-
-<?php
-// contact.php
-
-// Verifica se a requisição é AJAX
-if ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') {
-    // Pega os dados do formulário
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $mensagem = $_POST['mensagem'];
-
-    // Envia mensagem de contato via email
-    $to = 'seu-email@example.com';
-    $subject = 'Mensagem de contato do Green Thumb';
-    $body = "Nome: $nome\nEmail: $email\nMensagem: $mensagem";
-
-    if (mail($to, $subject, $body)) {
-        echo json_encode(['success' => true]);
-    } else {
-        echo json_encode(['success' => false]);
-    }
-} else {
-    http_response_code(403);
-    echo 'Acesso negado!';
-}
