@@ -56,3 +56,28 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
   sendContactForm();
 });
+
+<?php
+// contact.php
+
+// Verifica se a requisição é AJAX
+if ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') {
+    // Pega os dados do formulário
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $mensagem = $_POST['mensagem'];
+
+    // Envia mensagem de contato via email
+    $to = 'seu-email@example.com';
+    $subject = 'Mensagem de contato do Green Thumb';
+    $body = "Nome: $nome\nEmail: $email\nMensagem: $mensagem";
+
+    if (mail($to, $subject, $body)) {
+        echo json_encode(['success' => true]);
+    } else {
+        echo json_encode(['success' => false]);
+    }
+} else {
+    http_response_code(403);
+    echo 'Acesso negado!';
+}
