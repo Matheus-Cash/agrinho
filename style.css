@@ -15,7 +15,12 @@ body {
   background-color: green;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: white;
   border: green;
@@ -116,10 +121,10 @@ footer p {
   margin-bottom: 0;
 }
 
-h2{
-color: green;
+h2 {
+  color: green;
 }
-/java script estilização/
-#nome-usuário{
-    font-weight: bold;    
+
+/java script estilização/ #nome-usuário {
+  font-weight: bold;
 }
