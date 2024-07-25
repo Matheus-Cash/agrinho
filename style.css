@@ -54,7 +54,7 @@ img {
 }
 
 form {
-  display: inline-flex;
+display: inline block;
   flex-direction: column;
   align-items: center;
 }
