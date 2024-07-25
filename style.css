@@ -1,13 +1,13 @@
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #C6E2B5; /* Cor de fundo */
 }
 
 header {
-  background-color: #34C759; /* Verde Fresco */
-  padding: 1em;
+  background-color: #8BC34A; /* Cor de título */
+  padding: 20px;
   text-align: center;
 }
 
@@ -24,21 +24,65 @@ nav li {
 }
 
 nav a {
-  color: #333333; /* Cinza Escuro */
+  color: #4CAF50; /* Cor de link */
   text-decoration: none;
-}
-
-nav a:hover {
-  color: #34C759; /* Verde Fresco */
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 2em;
+  padding: 20px;
 }
 
 section {
-  background-color: #34C759; /*
+  background-color: #F7F7F7; /* Cor de seção */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #8BC34A; /* Cor de título */
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Cor de botão */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #8BC34A; /* Cor de rodapé */
+  padding: 10px;
+  text-align: center;
+  color: #FFFFFF;
+}
